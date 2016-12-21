@@ -19,7 +19,7 @@
 # our code: C++
 !phoneme_*
 !map_*
-!/phone
+!/phones
 !/QUESST_DTW_STD
 !*.cpp
 !*.h
