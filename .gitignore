@@ -15,14 +15,12 @@
 !/myscript
 
 # our code: python and bash
-!/Encode_STD_v2
-!/DownSampling_STD
 
 # our code: C++
-!/STD/
-!/Partial_STD
-!/STD/infra2
-!/Partial_STD/infra2
+!phoneme_*
+!map_*
+!/phone
+!/QUESST_DTW_STD
 !*.cpp
 !*.h
 !Makefile*
