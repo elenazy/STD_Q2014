@@ -17,7 +17,7 @@
 # our code: python and bash
 
 # our code: C++
-!phoneme_*
+!phonemes_*
 !map_*
 !/phones
 !/QUESST_DTW_STD
