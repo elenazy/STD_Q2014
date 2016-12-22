@@ -21,6 +21,9 @@
 #!map_*
 !/phones
 !/QUESST_DTW_STD
+!/QUESST_DTW_STD/entity
+!/QUESST_DTW_STD/util
+!/QUESST_code_v1.3
 !*.cpp
 !*.h
 !Makefile*
