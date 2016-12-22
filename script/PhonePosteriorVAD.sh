@@ -10,7 +10,7 @@ for i in `seq $Core_NUM`; do
 {
     list=${data_list}${i}
     python PhonePosteriorVAD.py $data_dir $list VAD_BUT_PHN czpg_mono hupg_mono ruspg_mono
-    #rm $list
+    rm $list
 } &
 
 done
