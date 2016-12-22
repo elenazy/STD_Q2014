@@ -8,8 +8,8 @@ def VAD(SIL_probability_mean, threshold=THRESHOLD):
 
 def write_list(fid, list_):
     for i in range(len(list_)-1):
-        fid.writelines(str(list_[i]) + " ")
-    fid.writelines(str(list_[-1]) + "\n")
+        fid.writelines(str(list_[i]))
+    fid.writelines(str(list_[-1]))
 
 
 if __name__=="__main__":
