@@ -98,7 +98,7 @@ void computeDist( const infra::matrix& query, const infra::matrix& test, infra::
 	unsigned long width = dist_matrix.width();
 	unsigned long dim = query.width();
 
-	if(featureType == "mfc" || featureType == "isa"|| featureType == "lpp" || featureType == "vtlnmfc" || featureType.find("sbnf")!=std::string::npos)
+	if(featureType == "mfcc" || featureType == "isa"|| featureType == "lpp" || featureType == "vtlnmfc" || featureType.find("sbnf")!=std::string::npos)
 	{
 		infra::prod_t(query,test,dist_matrix); // dist_matrix = query*test.T
 		dist_matrix = 1 - dist_matrix;

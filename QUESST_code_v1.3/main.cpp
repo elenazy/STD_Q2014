@@ -39,9 +39,9 @@ int score_for_one_query(const string& query_id, infra::matrix* test, int test_si
 	}
 	//if the feature type is mfc ,isa or vtlnmfc then use mvn normalization
 	//else use normalizeFea
-	if (featureType == "mfc"||featureType=="isa" || featureType == "vtlnmfc")
+	if (featureType == "mfcc"||featureType=="isa" || featureType == "vtlnmfc")
 		mvn(query);
-	if (featureType == "mfc"||featureType=="isa" || featureType == "sbnf" || featureType == "lpp"||featureType.find("sbnf") != std::string::npos)
+	if (featureType == "mfcc"||featureType=="isa" || featureType == "sbnf" || featureType == "lpp"||featureType.find("sbnf") != std::string::npos)
 	    normalizeFea(query);
 //normal DTW	
 	ofstream ofs((query_id + ".result").c_str());
@@ -107,9 +107,9 @@ int main(int argc, char *argv[])
 			return EXIT_FAILURE;
 		}
 
-		if (featureType == "mfc"||featureType == "isa"||featureType == "vtlnmfc")
+		if (featureType == "mfcc"||featureType == "isa"||featureType == "vtlnmfc")
 			mvn(test[i]);
-		if (featureType == "mfc"||featureType=="isa" || featureType == "vtlnmfc" || featureType.find("sbnf") != std::string::npos)
+		if (featureType == "mfcc"||featureType=="isa" || featureType == "vtlnmfc" || featureType.find("sbnf") != std::string::npos)
 			normalizeFea(test[i]);
 
 	}	

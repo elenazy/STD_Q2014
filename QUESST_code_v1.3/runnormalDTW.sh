@@ -12,7 +12,7 @@ stage=1
 tmp_dir="./tmp/"
 out_dir="./out/"
 result_dir="./result/"
-export train_cmd="../script/slurm.pl"
+export train_cmd="../script/slurm.pl --exclude=node01"
 for feature in ruspg_mono;
 do
     if [ $stage -le 1 ]; then
